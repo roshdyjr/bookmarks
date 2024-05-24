@@ -1,0 +1,101 @@
+/************************** Main Styles *********************************/
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+  background-color: #f7ecde;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+h1:hover::before {
+  height: 50%;
+}
+
+.bookmark-content {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.bookmark-content h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+/************************** Invalid Data Box Styles *********************************/
+
+.invalid-box {
+  background-color: #0007;
+}
+
+.box-content {
+  width: 500px;
+  z-index: 999;
+}
+
+.head-circles span {
+  width: 20px;
+  height: 20px;
+}
+
+.circle1-color {
+  background-color: #f15f5d;
+}
+
+.circle2-color {
+  background-color: #febe2e;
+}
+
+.circle3-color {
+  background-color: #4db748;
+}
+
+.box-content p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #352e28;
+}
+
+.rules li {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.rules i {
+ color: #bb4120;
+}
+
+.invalid-box ::selection {
+  background: #FEC260;
+}
